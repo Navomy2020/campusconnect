@@ -5,6 +5,9 @@ import questionroutes from "./routes/questionroutes.js";
 import answerRoutes from "./routes/answerroutes.js";
 import leaderboardRoutes from "./routes/leaderboardroutes.js";
 import authRoutes from "./routes/authroutes.js"
+import dotenv from "dotenv";
+dotenv.config();
+
 
 const app = express();
 app.use(cors());
