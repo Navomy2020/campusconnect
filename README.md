@@ -1,4 +1,4 @@
-my read me file is 🎯 CampusConnect – Structured Peer Learning Platform
+ 🎯 CampusConnect – Structured Peer Learning Platform
 Basic Details
 Team Name: Ruby 
 Team Members
