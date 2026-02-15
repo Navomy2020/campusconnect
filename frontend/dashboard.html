@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CampusConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+    <nav class="navbar">
+        <div class="nav-left">
+            <button id="postQuestionBtn" class="btn">Post Question</button>
+        </div>
+        <div class="nav-center">
+            <h1>CampusConnect</h1>
+        </div>
+        <div class="nav-right">
+            <button id="profileBtn" class="btn btn-secondary">Profile</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h2>Recent Questions</h2>
+        <div id="questionsList" class="questions-list">
+            <!-- Questions will be loaded here -->
+            <p>Loading questions...</p>
+        </div>
+    </main>
+
+    <!-- Post Question Modal -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Ask a Question</h2>
+            <form id="postQuestionForm">
+                <div class="form-group">
+                    <label for="q-title">Title</label>
+                    <input type="text" id="q-title" required placeholder="How do I...">
+                </div>
+                <div class="form-group">
+                    <label for="q-domain">Domain (Category)</label>
+                    <input type="text" id="q-domain" required placeholder="Programming">
+                </div>
+                <div class="form-group">
+                    <label for="q-description">Description</label>
+                    <textarea id="q-description" rows="5" required placeholder="Provide details..."></textarea>
+                </div>
+                <button type="submit" class="btn">Post Question</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

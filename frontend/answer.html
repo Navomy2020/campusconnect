@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Details - CampusConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="answer-page">
+    <nav class="navbar">
+        <button onclick="window.location.href='dashboard.html'" class="btn btn-secondary">Back to Dashboard</button>
+        <h1>CampusConnect</h1>
+        <div id="userInfo"></div>
+    </nav>
+
+    <main class="main-content">
+        <div id="questionDetail" class="question-detail">
+            <!-- Question details loaded here -->
+            <p>Loading...</p>
+        </div>
+
+        <section class="answers-section">
+            <h3>Answers</h3>
+            <div id="answersList">
+                <!-- Answers loaded here -->
+            </div>
+
+            <div class="post-answer-form">
+                <h3>Your Answer</h3>
+                <form id="postAnswerForm">
+                    <div class="form-group">
+                        <textarea id="answerText" rows="4" required placeholder="Type your answer here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Answer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/answer.js"></script>
+</body>
+
+</html>
